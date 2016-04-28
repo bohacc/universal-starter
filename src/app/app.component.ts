@@ -64,6 +64,7 @@ export class About { }
   <nav>
     <a [routerLink]=" ['./Home'] ">Home</a>
     <a [routerLink]=" ['./About'] ">About</a>
+    <a [routerLink]="['./Home']">Test</a>
   </nav>
   <div class="hero-universal">
     <div class="inner-hero">
@@ -91,6 +92,7 @@ export class About { }
   { path: '/', component: Home, name: 'Home', useAsDefault: true },
   { path: '/home', component: Home, name: 'Home' },
   { path: '/about', component: About, name: 'About' },
+  { path: '/test', component: About, name: 'About' },
   { path: '/**', redirectTo: ['Home'] }
 ])
 export class App {

@@ -65,9 +65,10 @@ app.get('/data.json', (req, res) => {
 });
 
 // Routes with html5pushstate
-app.use('/', ngApp);
+//app.use('/', ngApp);
 app.use('/about', ngApp);
 app.use('/home', ngApp);
+app.use('/test', ngApp);
 
 // Server
 app.listen(3000, () => {
